@@ -1,8 +1,8 @@
 interface Todo {
-    id:number;
+    id: number;
     todo: string;
     isDone: boolean;
-    handleAdd: (e: React.FormEvent<EventTarget>)=>void;
+    handleAdd: (e: React.FormEvent<EventTarget>) => void;
 }
 
 export default Todo;

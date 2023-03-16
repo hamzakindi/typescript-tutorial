@@ -8,7 +8,7 @@ interface Props {
 }
 
 
-const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }: Props) => {
+const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
