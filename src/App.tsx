@@ -1,3 +1,7 @@
+/**
+ * This is the tutorial I am following for this project:
+ * https://www.youtube.com/watch?v=FJDVKeh7RJI&t=1610s
+ */
 import React, { useState } from 'react';
 import InputField from './components/InputField';
 
