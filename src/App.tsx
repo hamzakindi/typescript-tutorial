@@ -1,6 +1,6 @@
 /**
  * This is the tutorial I am following for this project:
- * https://www.youtube.com/watch?v=FJDVKeh7RJI&t=1610s
+ * https://youtu.be/FJDVKeh7RJI?t=3786
  */
 import React, { useState } from 'react';
 import InputField from './components/InputField';
