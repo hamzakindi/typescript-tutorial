@@ -1,6 +1,8 @@
 /**
  * This is the tutorial I am following for this project:
- * https://youtu.be/FJDVKeh7RJI?t=3786
+ * https://youtu.be/FJDVKeh7RJI?t=4050
+ * Use reducer hook shopping cart tutorial: https://www.youtube.com/watch?v=HptuMAUaNGk
+ * 
  */
 import React, { useState } from 'react';
 import InputField from './components/InputField';
