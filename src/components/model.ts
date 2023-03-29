@@ -9,7 +9,7 @@ export interface Todo {
     handleAdd: (e: React.FormEvent<EventTarget>) => void;
 }
 
-
+/*
 type Actions =
     | { type: 'add'; payload: string }
     | { type: 'remove'; payload: number }
@@ -30,7 +30,7 @@ const TodoReducer = (state: Todo[], action: Actions) => {
             return state;
     }
 }
-/*
+
 export const ReducerExample:React.FC = () => {
    const [state, dispatch] = useReducer(TodoReducer, []); // Error message: No overload matches the call.
     const test= 'test';
@@ -40,7 +40,7 @@ export const ReducerExample:React.FC = () => {
         <span>{test}</span>
         </div>
     )
-}
+}*/
 /*Complete error message
 No overload matches this call.
   Overload 1 of 5, '(reducer: ReducerWithoutAction<any>, initializerArg: any, initializer?: undefined): [any, DispatchWithoutAction]', gave the following error.
@@ -50,5 +50,5 @@ No overload matches this call.
 */
 
 
-* /
+
 
