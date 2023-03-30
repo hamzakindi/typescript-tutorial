@@ -1,14 +1,13 @@
-
-import React, { useReducer } from 'react';
-
-
-export interface Todo {
+interface Todo {
     id: number;
     todo: string;
     isDone: boolean;
     handleAdd: (e: React.FormEvent<EventTarget>) => void;
 }
 
+export default Todo;
+
+//import React, { useReducer } from 'react';
 /*
 type Actions =
     | { type: 'add'; payload: string }
