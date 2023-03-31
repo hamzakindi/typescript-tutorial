@@ -18,7 +18,7 @@ const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
       </span>
       {todos.map((todo) => (
         <SingleTodo
-          todo={todo} todos={[]} setTodos={setTodos}
+          todo={todo} todos={todos} setTodos={setTodos}
         />))}
     </div>
     <div className="todos remove"></div>
