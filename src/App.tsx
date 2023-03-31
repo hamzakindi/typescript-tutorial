@@ -1,6 +1,6 @@
 /**
  * This is the tutorial I am following for this project:
- * https://youtu.be/FJDVKeh7RJI?t=4380
+ * https://www.youtube.com/watch?v=FJDVKeh7RJI&t=4380s
  * Use reducer hook shopping cart tutorial: https://www.youtube.com/watch?v=HptuMAUaNGk
  * 
  */

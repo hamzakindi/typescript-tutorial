@@ -114,3 +114,6 @@
         flex-direction: column;
     }
 }
+.remove {
+    background-color: rgb(235, 103, 00);
+}
