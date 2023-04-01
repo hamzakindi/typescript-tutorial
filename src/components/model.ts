@@ -6,7 +6,7 @@ interface Todo {
 }
 
 export default Todo;
-
+// Commit 2
 //import React, { useReducer } from 'react';
 /*
 type Actions =
