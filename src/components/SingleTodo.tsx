@@ -28,9 +28,11 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
     const handleDelete = (id: number) => {
         setTodos(todos.filter((todo) => todo.id !== id));
     };
-    const handleEdit = (e: React.FormEvent<HTMLFormElement>, id: number) => {
+    const handleEdit = (e: React.FormEvent<HTMLFormElement>,
+        id: number) => {
         e.preventDefault();
-        setTodos(todos.map((todo) => todo.id === id ? { ...todo, todo: editTodo } : todo));
+        setTodos(todos.map((todo) => todo.id === id ?
+            { ...todo, todo: editTodo } : todo));
         setEdit(false);
     };
 
@@ -41,9 +43,13 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
     }, [edit]);
 
     return (
-        <form className='todos__single' onSubmit={(e) => handleEdit(e, todo.id)}>
+        <form className='todos__single' onSubmit={
+            (e) => handleEdit(e, todo.id)}>
             {
-                edit ? (<input ref={inputRef} value={editTodo} onChange={(e) => { setEditTodo(e.target.value) }} className="todos__single--text" />) : (
+                edit ? (<input ref={inputRef} value={editTodo} onChange={(e) => { setEditTodo(e.target.value) }}
+                    className="todos__single--text" />) : (
+
+                    // The below code renders the completed text as strick through
                     todo.isDone ? (
                         <s className='todos__single--text'>{todo.todo}</s>
                     ) : (
