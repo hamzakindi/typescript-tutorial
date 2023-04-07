@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './styles.css';
-// Testing squash and merge
+
 interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
