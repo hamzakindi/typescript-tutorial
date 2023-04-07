@@ -1,6 +1,6 @@
 /**
  * This is the tutorial I am following for this project:
- * https://youtu.be/FJDVKeh7RJI?t=4747
+ * https://youtu.be/FJDVKeh7RJI?t=4967
  * Use reducer hook shopping cart tutorial: https://www.youtube.com/watch?v=HptuMAUaNGk
  * To merge the pull request, I need to be on the branch where I created the pull request. 
  * That is where I will find the pull request in vscode.
