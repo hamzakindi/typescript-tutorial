@@ -28,9 +28,9 @@ const TodoList: React.FC<Props> = ({ todos, setTodos, completedTodos, setComplet
                   index={index}
                   todo={todo} todos={todos} setTodos={setTodos}
                 />))}
-                {provided.placeholder}
-            </div>)
-        }
+           {provided.placeholder}
+            </div>
+            )}
       </Droppable>
       <Droppable droppableId='TodosRemove'>
         {
@@ -48,8 +48,7 @@ const TodoList: React.FC<Props> = ({ todos, setTodos, completedTodos, setComplet
                 />))}
               {provided.placeholder}
             </div>
-          )
-        }
+          )}
       </Droppable>
     </div>
   )

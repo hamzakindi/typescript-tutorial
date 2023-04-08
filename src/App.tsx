@@ -30,8 +30,6 @@ const App: React.FC = () => {
       setTodo("");
     }
   }
-  console.log(todos);
-
   return (
     <DragDropContext onDragEnd={()=>{}}>
     <div className="App">
