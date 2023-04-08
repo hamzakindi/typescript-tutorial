@@ -46,6 +46,7 @@ const SingleTodo: React.FC<Props> = ({ index, todo, todos, setTodos }) => {
 
     return (
         <Draggable
+            key={todo.id}
             draggableId={todo.id.toString()}
             index={index}>
             {(provided) => (
