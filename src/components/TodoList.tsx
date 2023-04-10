@@ -17,31 +17,40 @@ const TodoList: React.FC<Props> = ({ todos, setTodos, completedTodos, setComplet
     <div className="container">
       <Droppable droppableId='TodosList'>
         {
-          (provided) => (<div className="todos" ref={provided.innerRef} {...provided.droppableProps}>
-            <span className="todos__heading">
-              Active Tasks
-            </span>
-            {todos.map((todo) => (
+          (provided, snapshot) => (
+            <div className={`todos ${snapshot.isDraggingOver ? "dragactive" : ""}`} ref={provided.innerRef}
+              {...provided.droppableProps}>
+              <span className="todos__heading">
+                Active Tasks
+              </span>
+              {todos.map((todo, index) => (
                 <SingleTodo
+                  key={todo.id}
+                  index={index}
                   todo={todo} todos={todos} setTodos={setTodos}
                 />))}
-          </div>)
-        }
+              {provided.placeholder}
+            </div>
+          )}
       </Droppable>
       <Droppable droppableId='TodosRemove'>
         {
-          (provided) => (
-            <div className="todos remove" ref={provided.innerRef} {...provided.droppableProps}>
+          (provided, snapshot) => (
+            <div className={`todos remove ${snapshot.isDraggingOver ? "dragcomplete" : ""}`}
+              ref={provided.innerRef}
+              {...provided.droppableProps}>
               <span className="todos__heading">
                 Completed Tasks
               </span>
-              {completedTodos.map((todo) => (
+              {completedTodos.map((todo, index) => (
                 <SingleTodo
-                  todo={todo} todos={todos} setTodos={setCompletedTodos}
+                  key={todo.id}
+                  index={index}
+                  todo={todo} todos={completedTodos} setTodos={setCompletedTodos}
                 />))}
+              {provided.placeholder}
             </div>
-          )
-        }
+          )}
       </Droppable>
     </div>
   )
